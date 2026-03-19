@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>柳州景点 - 柳州的春天</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        body {
+            background-color: #f7f9f7;
+            color: #333;
+        }
+        header {
+            background-color: #2c7a50;
+            position: sticky;
+            top: 0;
+            z-index: 99;
+        }
+        .nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .nav-links a:hover {
+            color: #ffd166;
+        }
+        .banner {
+            height: 380px;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url("微信图片_20260319194014_97_2.jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .banner h1 {
+            font-size: 42px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        .title {
+            text-align: center;
+            font-size: 32px;
+            color: #2c7a50;
+            margin-bottom: 40px;
+        }
+        .spot-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+        }
+        .spot-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        .spot-card:hover {
+            transform: translateY(-6px);
+        }
+        .spot-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .spot-info {
+            padding: 20px;
+        }
+        .spot-info h3 {
+            color: #2c7a50;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .spot-info p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #555;
+        }
+        footer {
+            background-color: #2c7a50;
+            color: white;
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="nav">
+        <div class="logo">柳州的春天</div>
+        <div class="nav-links">
+            <a href="index.html">首页</a >
+            <a href="chunrihuahai.html">春日花海</a >
+            <a href="lvshufengguang.html">绿树风光</a >
+            <a href="liuzhoujingdiandaquan.html">柳州景点</a >
+            <a href="liuzhoumeishi.html">柳州美食</a >
+            <a href="guanyuwomen.html">关于我们</a >
+        </div>
+    </div>
+</header>
+
+<div class="banner">
+    <h1>柳州景点大全 · 山水之城</h1>
+</div>
+
+<div class="container">
+    <h2 class="title">柳州必游景点</h2>
+
+    <div class="spot-box">
+        <div class="spot-card">
+            <img src="微信图片_20260319205627_116_2.jpg" alt="龙潭公园">
+            <div class="spot-info">
+                <h3>龙潭公园</h3>
+                <p>国家4A级景区，集自然山水、民族风情、喀斯特地貌于一体，春天百花盛开，是柳州最具代表性公园。</p >
+            </div>
+        </div>
+
+        <div class="spot-card">
+            <img src="微信图片_20260319194016_98_2.jpg" alt="柳侯公园">
+            <div class="spot-info">
+                <h3>柳侯公园</h3>
+                <p>为纪念唐代文学家柳宗元而建，百年历史园林，古木参天，柳湖清澈，文化气息浓厚。</p >
+            </div>
+        </div>
+
+        <div class="spot-card">
+            <img src="微信图片_20260319194012_96_2.jpg" alt="百里柳江">
+            <div class="spot-info">
+                <h3>百里柳江</h3>
+                <p>柳州城市名片，一江碧水穿城而过，两岸青山、楼宇、桥梁相映，夜景尤为震撼。</p >
+            </div>
+        </div>
+
+        <div class="spot-card">
+            <img src="微信图片_20260319194042_111_2.jpg" alt="马鞍山公园">
+            <div class="spot-info">
+                <h3>马鞍山公园</h3>
+                <p>柳州城中制高点，登顶可俯瞰全城风光，是观赏柳州全景与日落的绝佳位置。</p >
+            </div>
+        </div>
+
+        <div class="spot-card">
+            <img src="微信图片_20260319205629_117_2.jpg" alt="卡乐星球">
+            <div class="spot-info">
+                <h3>卡乐星球</h3>
+                <p>大型高科技主题乐园，适合亲子、年轻人游玩，拥有多项刺激与沉浸式体验项目。</p >
+            </div>
+        </div>
+
+        <div class="spot-card">
+            <img src="微信图片_20260319205630_118_2.jpg" alt="柳州文庙">
+            <div class="spot-info">
+                <h3>柳州文庙</h3>
+                <p>祭祀孔子的古建筑群，建筑气势恢宏，夜晚灯光璀璨，充满传统文化氛围。</p >
+            </div>
+        </div>
+
+        <div class="spot-card">
+            <img src="微信图片_20260319193930_82_2.jpg" alt="江滨公园">
+            <div class="spot-info">
+                <h3>江滨公园</h3>
+                <p>春季紫荆花核心观赏区，沿江步道风景优美，是市民散步、赏花、休闲的好去处。</p >
+            </div>
+        </div>
+
+        <div class="spot-card">
+            <img src="微信图片_20260319194038_109_2.jpg" alt="三门江森林公园">
+            <div class="spot-info">
+                <h3>三门江森林公园</h3>
+                <p>柳州城市后花园，森林覆盖率高，空气清新，适合徒步、登山、亲近自然。</p >
+            </div>
+        </div>
+
+        <div class="spot-card">
+            <img src="微信图片_20260319205636_119_2.jpg" alt="柳州工业博物馆">
+            <div class="spot-info">
+                <h3>柳州工业博物馆</h3>
+                <p>全国首座城市工业博物馆，展现柳州从传统工业到现代汽车城的发展历程。</p >
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 柳州的春天 · 宣传网站 | 一城山水，一城花香</p >
+</footer>
+
+</body>
+</html>
